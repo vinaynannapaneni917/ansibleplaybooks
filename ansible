@@ -1,0 +1,9 @@
+#installing httpd#
+---
+  - hosts: all
+    become: yes
+    tasks:
+      -  name: Install a Package
+         package:
+           name: httpd
+           state: installed
